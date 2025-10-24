@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beans World - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="home.html">Beans World</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="our-beans.html">Our Beans</a></li>
+          <li class="nav-item"><a class="nav-link" href="price-list.html">Price List</a></li>
+          <li class="nav-item"><a class="nav-link" href="brewing-tips.html">Brewing Tips</a></li>
+          <li class="nav-item"><a class="nav-link" href="making-of.html">Making Of</a></li>
+          <li class="nav-item"><a class="nav-link" href="our-story.html">Our Story</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-overlay">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-7">
+          <h1>Welcome to Beans World</h1>
+          <p class="lead">Specialty coffee beans roasted with care. Discover single origin and signature blends sourced sustainably from around the globe.</p>
+          <a href="#register" class="btn btn-brown me-2">Contact Us</a>
+          <a href="our-beans.html" class="btn btn-outline-secondary">Explore Our Beans</a>
+        </div>
+        <div class="col-md-5">
+          <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/hero1.jpg" class="d-block w-100 img-fluid" alt="Hero 1">
+              </div>
+              <div class="carousel-item">
+                <img src="images/blend1.jpg" class="d-block w-100 img-fluid" alt="Blend 1">
+              </div>
+              <div class="carousel-item">
+                <img src="images/blend2.jpg" class="d-block w-100 img-fluid" alt="Blend 2">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our blends -->
+  <section class="py-5">
+    <div class="container">
+      <h2>Our Blends</h2>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="card card-coffee">
+            <img src="images/blend1.jpg" class="card-img-top" alt="Blend 1">
+            <div class="card-body">
+              <h5 class="card-title">Morning Harmony</h5>
+              <p class="card-text">A smooth medium roast with chocolate notes. Perfect for filter coffee.</p>
+              <a href="price-list.html" class="btn btn-brown">View Price</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-coffee">
+            <img src="images/blend2.jpg" class="card-img-top" alt="Blend 2">
+            <div class="card-body">
+              <h5 class="card-title">Desert Camp Espresso</h5>
+              <p class="card-text">Full-bodied, bold crema — great for espresso and outdoor brews.</p>
+              <a href="price-list.html" class="btn btn-brown">View Price</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-coffee">
+            <img src="images/beans-closeup.jpg" class="card-img-top" alt="Beans">
+            <div class="card-body">
+              <h5 class="card-title">Single Origin Ethiopia</h5>
+              <p class="card-text">Bright citrus and floral notes from heirloom Ethiopian varieties.</p>
+              <a href="price-list.html" class="btn btn-brown">View Price</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Register form -->
+  <section id="register" class="py-5 bg-white">
+    <div class="container">
+      <h2>Register Your Interest</h2>
+      <p>Sign up to receive exclusive offers and new roast announcements.</p>
+
+      <form id="registerForm" class="row g-3 needs-validation" novalidate>
+        <div id="regErrors" class="alert alert-danger d-none"></div>
+        <div id="regSuccess" class="alert alert-success d-none"></div>
+
+        <div class="col-md-6">
+          <label class="form-label">First Name</label>
+          <input id="firstName" class="form-control" type="text" required>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Last Name</label>
+          <input id="lastName" class="form-control" type="text" required>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Mobile No.</label>
+          <input id="mobileNo" class="form-control" type="tel" placeholder="8 digits" required>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">E-mail</label>
+          <input id="email" class="form-control" type="email" required>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-brown" type="submit">Register</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-4">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div>© Beans World</div>
+      <div><a class="footer-link" href="mailto:contact@beansworld.com">contact@beansworld.com</a></div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>

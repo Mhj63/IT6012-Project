@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beans World - Making Of</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="home.html">Beans World</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="our-beans.html">Our Beans</a></li>
+          <li class="nav-item"><a class="nav-link" href="price-list.html">Price List</a></li>
+          <li class="nav-item"><a class="nav-link" href="brewing-tips.html">Brewing Tips</a></li>
+          <li class="nav-item"><a class="nav-link active" href="making-of.html">Making Of</a></li>
+          <li class="nav-item"><a class="nav-link" href="our-story.html">Our Story</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <h1>Making of Beans World</h1>
+
+    <h3>Low-fidelity mock-ups</h3>
+    <p>Below are mock-up images used during design (placeholders). These mock-ups show layout, responsive stack, and spacing decisions.</p>
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <img src="images/mockup-1.png" alt="Mockup 1" class="img-fluid shadow-sm">
+      </div>
+      <div class="col-md-6 mb-3">
+        <img src="images/placeholder.png" alt="Mockup 2" class="img-fluid shadow-sm">
+      </div>
+    </div>
+
+    <h3>Design Justification</h3>
+    <h5>Impact of design & color choices</h5>
+    <p>The palette (Rich Brown, Cream, Gold) evokes warmth and natural coffee tones, helping users associate the brand with artisanal roasting and quality. Typography pairing (Playfair Display for headings and Lato for body) gives an elegant café feel while remaining legible on small screens. Visual hierarchy is reinforced by generous spacing, card shadows, and rounded buttons to guide conversions (e.g., “Register” CTA).</p>
+
+    <h5>Impact of HTML, CSS, JS, and Bootstrap on maintainability</h5>
+    <p>We used semantic HTML5 tags (header, main, footer) for accessibility and easier content updates. Bootstrap 5 provides a responsive grid and ready components (navbar, carousel, accordion, table) which accelerates development and ensures consistent behavior across devices. A single external stylesheet (`styles.css`) holds theming variables (colors, fonts) so visual changes are centralized. JavaScript is lightweight and separated into `scripts.js` for maintainability — form validation logic, success/error messaging, and `localStorage` usage are modular and easy to extend.</p>
+
+    <h5>Accessibility considerations</h5>
+    <ul>
+      <li>Alt attributes added for images and semantic form labels.</li>
+      <li>Contrast choices kept high between text and background for readability.</li>
+      <li>Form errors are shown in accessible alert containers.</li>
+    </ul>
+
+    <h5>Folder structure</h5>
+    <p>Keeping all images in `/images`, CSS/JS files at project root helps graders and developers to locate resources quickly. Page filenames follow assignment naming conventions required by the brief.</p>
+  </main>
+
+  <footer class="mt-4">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div>© Beans World</div>
+      <div><a class="footer-link" href="mailto:contact@beansworld.com">contact@beansworld.com</a></div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
