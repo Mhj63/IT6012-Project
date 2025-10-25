@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beans World - Our Story</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Beans World</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="our-beans.html">Our Beans</a></li>
+          <li class="nav-item"><a class="nav-link" href="price-list.html">Price List</a></li>
+          <li class="nav-item"><a class="nav-link" href="brewing-tips.html">Brewing Tips</a></li>
+          <li class="nav-item"><a class="nav-link" href="making-of.html">Making Of</a></li>
+          <li class="nav-item"><a class="nav-link active" href="our-story.html">Our Story</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <h1>Our Story — Critical Reflection</h1>
+
+    <article>
+      <p><strong>Summary of work completed:</strong> For this project we designed and implemented a six-page commercial website for "Beans World" using HTML, CSS, JavaScript, and Bootstrap 5. Pages include Home, Our Beans, Price List, Brewing Tips, Making Of (mock-ups & justifications), and Our Story (this reflection). The home page features a hero carousel and a registration form that validates user input and stores the first name in localStorage to personalize sub-pages. Bootstrap components—accordion, table, cards, and responsive grid—were used to create consistent UI patterns. All styles are centralized in an external stylesheet, and JavaScript is modularized in `scripts.js` for form validation and simple state persistence.</p>
+
+      <p><strong>Challenges faced & how they were overcome:</strong> One challenge was ensuring the register form provided clear, actionable feedback while remaining accessible. To solve this, we used an alert container to list validation errors clearly and a success message area that acknowledges a valid submission. Another challenge was balancing aesthetics with maintainability: applying too many bespoke styles would have harmed maintainability. We resolved this by using Bootstrap as the structural foundation and keeping custom styles small and variables-based (colors and typography) so theme updates are straightforward. Lastly, ensuring responsive behavior for image-heavy sections required testing on different device widths and changing float behaviors via CSS media queries to avoid cluttered layouts on small screens.</p>
+
+      <p><strong>Outcomes</strong> The project reinforced how Bootstrap can speed development while maintaining accessibility and responsiveness. We learned to combine Bootstrap utilities with a small, well-structured custom stylesheet to produce a unique brand identity without sacrificing maintainability. JavaScript lessons included robust client-side validation patterns and safe usage of `localStorage` to persist simple user state across pages. We also practiced writing semantic HTML, which improved document structure and made the site friendlier for screen readers.</p>
+
+      <p><strong>Group work lessons:</strong> Coordinating assets and naming conventions early in the project saved time—agreeing on file names (e.g., `home.html`) and folder structure prevented merge conflicts. Clear division of tasks (design mock-ups, HTML templates, CSS theme, JavaScript behavior) worked well. Frequent small commits and simple documentation in a shared README would be recommended for future group work to improve traceability.</p>
+
+      <p><strong>Improvements & future work:</strong> If we extend the site, we’d add server-side handling for form submissions and a small CMS for product management. Adding unit tests for JavaScript validation and implementing ARIA enhancements for further accessibility would raise quality. For a live e-commerce version, integrate secure checkout and inventory tracking.</p>
+
+      <p><strong>Reflection summary:</strong> This project provided practical experience building a professional, responsive website from concept to implementation. The balance between design (colors, type, imagery) and technical decisions (semantic markup, centralized styles, modular JS) is central to maintainable web development. The outcome is a functional, attractive site that meets the assignment requirements and is ready for further enhancement.</p>
+    </article>
+  </main>
+
+  <footer class="mt-4">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div>2025 © Beans World</div>
+      <div><a class="footer-link" href="mailto:hello@beansworld.com">hello@beansworld.com</a></div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
