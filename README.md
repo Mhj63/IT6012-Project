@@ -11,9 +11,6 @@ Upload the folder to any web server or open `home.html` in your browser.
 
 ---
 
-## 📁 Project Structure
-
----
 
 ## 🎨 Features
 - Fully responsive design using **Bootstrap 5** grid system  
