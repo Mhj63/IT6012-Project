@@ -8,6 +8,8 @@ The project was designed to meet the requirements of a 6-page multi-section webs
 
 ## 🌐 Live Preview
 Upload the folder to any web server or open `index.html` in your browser.
+
+To enter the website, you may paste the link below into your favorite browser.
 `https://mhj63.github.io/IT6012-Project/index.html`
 
 ---
